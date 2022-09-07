@@ -1,0 +1,103 @@
+@import 'variables.css';
+@import 'base.css';
+
+.intro {}
+
+.intro .intro-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 38px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.intro-wrap div {
+    padding-top: 38px;
+    display: block;
+
+}
+
+.intro__img {
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    width: 240px;
+    align-self: end;
+    justify-self: end;
+}
+
+.section__title {
+    margin-bottom: .25em;
+    font-size: var(--fs-h2);
+}
+
+.section__title--intro {
+    font-weight: var(--fw-reg);
+
+}
+
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 60px;
+    grid-column-end: span 2;
+    text-align: right;
+    text-transform: uppercase;
+    padding-right: 20px;
+    z-index: 0;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+}
+
+.section__title--intro span {
+    font-family: var(--ff-secondary);
+
+
+}
+
+/* My services */
+.my-services {
+    background-color: var(--clr-dark);
+    background-image: url(portfolio-assets/shutterstock_592315250.jpg);
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--services {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+/* .section__title--services::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+
+} */
+/* .service {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+} */
